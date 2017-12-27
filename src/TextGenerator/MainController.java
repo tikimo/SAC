@@ -1,8 +1,7 @@
 package TextGenerator;
 
 
-import GeneratorEngine.Generator;
-import javafx.event.ActionEvent;
+import TextGenerator.GeneratorEngine.Generator;
 import javafx.scene.control.*;
 
 

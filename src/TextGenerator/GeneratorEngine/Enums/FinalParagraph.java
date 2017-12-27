@@ -1,4 +1,4 @@
-package GeneratorEngine.Enums;
+package TextGenerator.GeneratorEngine.Enums;
 
 public enum FinalParagraph {
 

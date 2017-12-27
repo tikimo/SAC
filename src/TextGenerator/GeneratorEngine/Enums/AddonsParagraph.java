@@ -1,12 +1,12 @@
-package GeneratorEngine.Enums;
+package TextGenerator.GeneratorEngine.Enums;
 
-public enum PropertiesParagraph {
+public enum AddonsParagraph {
     TEXT1("");
 
 
     private final String name;
 
-    PropertiesParagraph(String s) {
+    AddonsParagraph(String s) {
         name = s;
     }
 

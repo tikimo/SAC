@@ -1,6 +1,4 @@
-package GeneratorEngine;
-
-import GeneratorEngine.Enums.FinalParagraph;
+package TextGenerator.GeneratorEngine;
 
 public class tester {
 

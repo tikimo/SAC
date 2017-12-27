@@ -1,9 +1,9 @@
-package GeneratorEngine;
+package TextGenerator.GeneratorEngine;
 
-import GeneratorEngine.Enums.AddonsParagraph;
-import GeneratorEngine.Enums.FinalParagraph;
-import GeneratorEngine.Enums.LeadParagraph;
-import GeneratorEngine.Enums.PropertiesParagraph;
+import TextGenerator.GeneratorEngine.Enums.AddonsParagraph;
+import TextGenerator.GeneratorEngine.Enums.FinalParagraph;
+import TextGenerator.GeneratorEngine.Enums.LeadParagraph;
+import TextGenerator.GeneratorEngine.Enums.PropertiesParagraph;
 import javafx.scene.control.CheckBox;
 
 public class Generator {

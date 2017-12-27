@@ -15,7 +15,7 @@ public class Main extends Application {
         primaryStage.setTitle("SAC Text Generator 0.5");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.setResizable(false);
-        primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("/images/sac.png")));
+        primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("/TextGenerator/images/sac.png")));
 
 
         primaryStage.show();

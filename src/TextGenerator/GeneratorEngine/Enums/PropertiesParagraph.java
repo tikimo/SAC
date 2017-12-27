@@ -1,12 +1,12 @@
-package GeneratorEngine.Enums;
+package TextGenerator.GeneratorEngine.Enums;
 
-public enum LeadParagraph {
+public enum PropertiesParagraph {
     TEXT1("");
 
 
     private final String name;
 
-    LeadParagraph(String s) {
+    PropertiesParagraph(String s) {
         name = s;
     }
 
@@ -18,5 +18,4 @@ public enum LeadParagraph {
     public static String getRandom() {
         return values()[(int) (Math.random() * values().length)].toString();
     }
-
 }
