@@ -54,7 +54,7 @@ public class Generator {
                 .replaceAll("#erikoisvanteet", params[5].isSelected() ? "erikoisvanteet" : "")
                 .replaceAll("#huoltokirja", params[6].isSelected() ? "huoltokirja" : "")
                 .replaceAll("#invalidi", params[7].isSelected() ? "invalidi-varustus" : "")
-                .replaceAll("#kahdetRenkaat", params[8].isSelected() ? "kahdet renkaat" : "")
+                .replaceAll("#kahdetRenkaat", params[8].isSelected() ? (params[16].isSelected() ? "kahdet erinomaiset renkaat" : "kahdet renkaat") : "")
                 .replaceAll("#turbo", params[9].isSelected() ? "turbo" : "")
                 .replaceAll("#vetokoukku", params[10].isSelected() ? "vetokoukku" : "")
                 .replaceAll("#tuning", params[11].isSelected() ? "tuning-varustus" : "")

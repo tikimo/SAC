@@ -286,6 +286,7 @@
                         <CheckBox fx:id="metallivari" layoutX="634.0" layoutY="72.0" text="Metalliväri" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="72.0" />
                         <DatePicker layoutX="672.0" layoutY="183.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="180.0" />
                         <Label layoutX="570.0" layoutY="183.0" text="Seuraava katsastus:" AnchorPane.rightAnchor="128.0" AnchorPane.topAnchor="183.0" />
+                        <CheckBox fx:id="renkaidenKunto" layoutX="548.0" layoutY="429.0" mnemonicParsing="false" text="Renkaiden kunto erinomainen" AnchorPane.bottomAnchor="125.0" AnchorPane.rightAnchor="113.0" />
                      </children></AnchorPane>
             </content>
           </Tab>

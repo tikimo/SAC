@@ -15,7 +15,7 @@ public class MainController {
 
     public TextField merkki, malli, tkm, vuosimalli, kulutus, hinta;
     public CheckBox ajotietokone, ilmastointi, kattoluukku, keskuslukitus, lohko, nahka, navi, penkinlammitin, lisalammitin, pysakointitutka, sahkoistuimet, sahkoikkunat, sisatilapistoke, urheiluistuimet, vakionopeus;
-    public CheckBox aanentoisto, xenon, abs, sumu, turvatyynyt, erikoisvanteet, huoltokirja, invalidi, kahdetRenkaat, turbo, vetokoukku, tuning, ESP, matkapuhelin, audioin, metallivari;
+    public CheckBox aanentoisto, xenon, abs, sumu, turvatyynyt, erikoisvanteet, huoltokirja, invalidi, kahdetRenkaat, turbo, vetokoukku, tuning, ESP, matkapuhelin, audioin, metallivari, renkaidenKunto;
     public TextField vari;
     public ComboBox korimalli, polttoaine, vaihteisto;
 
@@ -44,7 +44,7 @@ public class MainController {
 
         // Addons paragraph parameters
         CheckBox[] addonsParams = new CheckBox[] {aanentoisto, xenon, abs, sumu, turvatyynyt, erikoisvanteet, huoltokirja,
-                invalidi, kahdetRenkaat, turbo, vetokoukku, tuning, ESP, matkapuhelin, audioin, metallivari};
+                invalidi, kahdetRenkaat, turbo, vetokoukku, tuning, ESP, matkapuhelin, audioin, metallivari, renkaidenKunto};
 
         // Final paragraph parameters
         String[] finalParagraphParams = new String[] {vari.getText(), malli.getText(), String.valueOf(korimalli.getValue())};
