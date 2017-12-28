@@ -20,7 +20,7 @@ public class Generator {
                 .replaceAll("#korimalli", params[7])
                 .replaceAll("#polttoaine", params[8])
                 .replaceAll("#vaihteisto", params[9])
-                .replaceAll("#hinta", params[10])
+                .replaceAll("#hinta", params[10]+" €")
                 ;
     }
 

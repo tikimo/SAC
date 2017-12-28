@@ -35,8 +35,8 @@ public class MainController {
 
         // Lead paragraph parameters
         String[] leadParagraphParams = new String[] {merkki.getText(), malli.getText(), tkm.getText(), vuosimalli.getText(),
-                kulutus.getText(), vari.getText(), String.valueOf(metallivari.isSelected() ? "metalliväri" : "väri"), String.valueOf(korimalli.getValue()),
-                String.valueOf(polttoaine.getValue()), String.valueOf(vaihteisto.getValue()), hinta.getText()};
+                kulutus.getText(), vari.getText(), String.valueOf(metallivari.isSelected() ? "metalliväri" : "väri"), String.valueOf(korimalli.getValue()).toLowerCase(),
+                String.valueOf(polttoaine.getValue()).toLowerCase(), String.valueOf(vaihteisto.getValue()).toLowerCase(), hinta.getText()};
 
         // Properties paragraph parameters
         CheckBox[] propertiesParams = new CheckBox[] {ajotietokone, ilmastointi, kattoluukku, keskuslukitus, lohko, nahka,

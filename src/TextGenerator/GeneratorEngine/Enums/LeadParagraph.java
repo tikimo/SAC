@@ -1,7 +1,7 @@
 package TextGenerator.GeneratorEngine.Enums;
 
 public enum LeadParagraph {
-    TEXT1("");
+    TEXT1("Siisti #merkki #malli, jolla on hintaa ainoastaan #hinta!");
 
 
     private final String name;
