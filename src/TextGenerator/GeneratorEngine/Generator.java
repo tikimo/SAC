@@ -12,7 +12,7 @@ public class Generator {
         return LeadParagraph.getRandom()
                 .replaceAll("#merkki", params[0])
                 .replaceAll("#malli", params[1])
-                .replaceAll("#tkm", params[2])
+                .replaceAll("#tkm", params[2] + " tkm")
                 .replaceAll("#vuosimalli", params[3])
                 .replaceAll("#kulutus", params[4]+" l/100km")
                 .replaceAll("#vari", params[5] )

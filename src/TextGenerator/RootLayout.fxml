@@ -296,7 +296,7 @@
                      <children>
                         <Label layoutX="14.0" layoutY="22.0" text="Tälle sivulle tulostuu generoitu teksti. Voit generoida tekstin painamalla &quot;Generoi&quot;.&#10;Voit kopioida ja muokata tekstiä tässä." AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="22.0" />
                         <Button fx:id="generateButton" layoutX="14.0" layoutY="66.0" mnemonicParsing="false" onAction="#generateText" text="Generoi" AnchorPane.rightAnchor="728.0" AnchorPane.topAnchor="66.0" />
-                        <TextArea fx:id="generateTextBox" layoutX="14.0" layoutY="103.0" prefHeight="370.0" prefWidth="608.0" promptText="Generoitava teksti ..." AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="103.0" />
+                        <TextArea fx:id="generateTextBox" layoutX="14.0" layoutY="103.0" prefHeight="449.0" prefWidth="608.0" promptText="Generoitava teksti ..." wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="103.0" />
                         <ProgressIndicator fx:id="progressAnimation" layoutX="91.0" layoutY="66.0" prefHeight="25.0" prefWidth="24.0" visible="false" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="685.0" AnchorPane.topAnchor="66.0" />
                      </children></AnchorPane>
               </content>
