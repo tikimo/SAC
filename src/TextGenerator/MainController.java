@@ -57,9 +57,9 @@ public class MainController {
                 generator.generateFinalParagraph(finalParagraphParams);
 
         // Adjust capitalization option
-        int indexOfChar = generatedText.indexOf("@CAPS") + 5;
+        int indexOfChar = generatedText.indexOf("%CAPS") + 5;
         String charToCaps = generatedText.substring(indexOfChar, indexOfChar + 1);
-        generatedText = generatedText.replaceAll("@CAPS" + charToCaps, charToCaps.toUpperCase());
+        generatedText = generatedText.replaceAll("%CAPS" + charToCaps, charToCaps.toUpperCase());
 
         generateTextBox.setText(generatedText);
 
