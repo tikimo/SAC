@@ -52,8 +52,8 @@ public class MainController {
         // Put it together
         String generatedText =
                 generator.generateLeadParagraph(leadParagraphParams) + "\n\n" +
-                generator.generateOminaisuudet(propertiesParams) + "\n\n" +
-                generator.generateLisavarusteet(addonsParams) + "\n\n" +
+                generator.generateProperties(propertiesParams) + "\n\n" +
+                generator.generateAddons(addonsParams) + "\n\n" +
                 generator.generateFinalParagraph(finalParagraphParams);
 
         // Adjust capitalization option

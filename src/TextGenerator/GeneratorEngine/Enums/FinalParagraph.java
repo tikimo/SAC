@@ -3,7 +3,8 @@ package TextGenerator.GeneratorEngine.Enums;
 public enum FinalParagraph {
 
     TEXT1("Tämän hienon #korimalli #malli:n löydät liikkeemme pihalta. Tarjoamme myös edullista rahoitusta."),
-    TEXT2("Tyylikkään #vari #malli odottaa sinua! Tervetuloa kahvittelemaan ja neuvottelemaan.");
+    TEXT2("Tyylikkään #vari #malli odottaa sinua! Tervetuloa kahvittelemaan ja neuvottelemaan."),
+    TEXT3("Tervetuloa koeajamaan tämä upea #korimalli #malli liikkeeseemme! Palveluihimme kuuluu lisäksi muun muassa halpa rahoitus ja edulliset renkaat. ");
 
     private final String signature =
             "\n\nSomeron Autokeskus Oy" +

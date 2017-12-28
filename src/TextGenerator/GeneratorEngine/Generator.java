@@ -24,7 +24,7 @@ public class Generator {
                 ;
     }
 
-    public String generateOminaisuudet(CheckBox[] params) {
+    public String generateProperties(CheckBox[] params) {
         return PropertiesParagraph.getRandom()
                 .replaceAll("#ajotietokone", params[0].isSelected() ? "ajotietokone" : "")
                 .replaceAll("#ilmastointi", params[1].isSelected() ? "ilmastointi" : "")
@@ -44,7 +44,7 @@ public class Generator {
                 ;
     }
 
-    public String generateLisavarusteet(CheckBox[] params) {
+    public String generateAddons(CheckBox[] params) {
         return AddonsParagraph.getRandom()
                 .replaceAll("#aanentoisto", params[0].isSelected() ? "hieno äänentoistojärjestelmä" : "")
                 .replaceAll("#xenon", params[1].isSelected() ? "Xenon-valot" : "")
