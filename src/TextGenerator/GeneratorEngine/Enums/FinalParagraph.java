@@ -6,11 +6,6 @@ public enum FinalParagraph {
     TEXT2("Tyylikkään #vari #malli odottaa sinua! Tervetuloa kahvittelemaan ja neuvottelemaan."),
     TEXT3("Tervetuloa koeajamaan tämä upea #korimalli #malli liikkeeseemme! Palveluihimme kuuluu lisäksi muun muassa halpa rahoitus ja edulliset renkaat. ");
 
-    private final String signature =
-            "\n\nSomeron Autokeskus Oy" +
-            "\nsomero-autocenter.com" +
-            "\n045 667 2920" +
-            "\nJoensuuntie 55, Somero 31400";
     private final String name;
 
     FinalParagraph(String s) {
@@ -19,6 +14,10 @@ public enum FinalParagraph {
 
     @Override
     public String toString() {
+        String signature = "\n\nSomeron Autokeskus Oy" +
+                "\nsomero-autocenter.com" +
+                "\n045 667 2920" +
+                "\nJoensuuntie 55, Somero 31400";
         return this.name + signature;
     }
 

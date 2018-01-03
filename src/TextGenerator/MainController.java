@@ -4,9 +4,13 @@ package TextGenerator;
 import TextGenerator.GeneratorEngine.Generator;
 import javafx.scene.control.*;
 
+import java.time.format.DateTimeFormatter;
+
 
 public class MainController {
+    public DatePicker seuraavaKatsastus;
     private Generator generator = new Generator();
+    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.YYYY");
 
     public ProgressIndicator progressAnimation;
     public Button saveTabPane;
@@ -52,17 +56,37 @@ public class MainController {
         // Put it together
         String generatedText =
                 generator.generateLeadParagraph(leadParagraphParams) + "\n\n" +
-                generator.generateProperties(propertiesParams) + "\n\n" +
-                generator.generateAddons(addonsParams) + "\n\n" +
+                        (seuraavaKatsastus.getValue() == null ? "" :
+                "Seuraava katsastus: " + formatter.format(seuraavaKatsastus.getValue()) + "\n\n") +
+                trimCommas(generator.generateProperties(propertiesParams)) + "\n\n" +
+                trimCommas(generator.generateAddons(addonsParams)) + "\n\n" +
                 generator.generateFinalParagraph(finalParagraphParams);
 
         // Adjust capitalization option
-        int indexOfChar = generatedText.indexOf("%CAPS") + 5;
-        String charToCaps = generatedText.substring(indexOfChar, indexOfChar + 1);
-        generatedText = generatedText.replaceAll("%CAPS" + charToCaps, charToCaps.toUpperCase());
+        generatedText = adjustCapitalization(generatedText);
 
         generateTextBox.setText(generatedText);
 
         progressAnimation.setVisible(false);
+    }
+
+    private String trimCommas(String text) {
+        /*
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == text.charAt(i+2)) {
+
+            }
+        }*/
+        String text2 = text.replaceAll(" ,", "")
+                .replaceAll("  ", " ")
+                .replaceAll(",.", ".");
+
+        return text2;
+    }
+
+    private String adjustCapitalization(String generatedText) {
+        int indexOfChar = generatedText.indexOf("%CAPS") + 5;
+        String charToCaps = generatedText.substring(indexOfChar, indexOfChar + 1);
+        return generatedText.replaceAll("%CAPS" + charToCaps, charToCaps.toUpperCase());
     }
 }

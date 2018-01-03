@@ -33,7 +33,7 @@ public class Generator {
                 .replaceAll("#lohko", params[4].isSelected() ? "lohkolämmitin" : "")
                 .replaceAll("#nahka", params[5].isSelected() ? "nahkasisusta" : "")
                 .replaceAll("#navi", params[6].isSelected() ? "navigaattori" : "")
-                .replaceAll("#penkinlammitin", params[7].isSelected() ? "penkinlämmitin" : "")
+                .replaceAll("#penkinlammitin", params[7].isSelected() ? "penkinlämmittimet" : "")
                 .replaceAll("#lisalammitin", params[8].isSelected() ? "lisälämmitin" : "")
                 .replaceAll("#pysakointitutka", params[9].isSelected() ? "pysäköintitutka" : "")
                 .replaceAll("#sahkoistuimet", params[10].isSelected() ? "sähköistuimet" : "")
